@@ -1,0 +1,408 @@
+html{
+    width: 1340px;
+    max-width: 1340px;
+    height: 1000px;
+    max-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-image: url('images/back_wall.jpeg');
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#global{
+    background-image: url('images/glare_wall.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header{
+    width: 100%;
+    height: 39%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header div{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo{
+    width: 49%;
+    height: 69%;
+    display: inline-block;
+}
+#logo img{
+    width: 40%;
+    margin-left: 43%;
+    -webkit-filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(5px 5px 5px black);
+}
+#title{
+    width: 49%;
+    display: inline-block;
+}
+#title p{
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: -12%;
+    margin-top: 10%;
+    color: rgb(242,101,36);
+    text-shadow: 2px 2px 2px black;
+}
+#subtitle{
+    width: 49%;
+}
+#subtitle p{
+    font-size: 120%;
+    margin-left: -12%;
+    margin-top: -5%;    
+}
+#menu{
+    margin-top: 4%;
+}
+#menu ul{
+    list-style-type: none;
+    width: 100%;
+    margin-left: 14.7%;
+}
+#menu ul li{
+    float: left;
+}
+#menu ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 15px 38px;
+    text-decoration: none;
+    background: rgb(242,101,36);
+    box-shadow: 2px 2px 2px rgb(242,81,36);
+}
+#menu ul li a:hover{
+    color: rgb(242, 160, 100);
+    background: rgba(0, 0, 0, .8);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+    transition: all .5s;
+}
+#menu ul li #active{
+    background: black;
+    box-shadow: 2px 2px 2px black;
+}
+#main{
+    width: 90%;
+    height: 49%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer{
+    width: 100%;
+    background: rgb(242,101,36);
+    height: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+#footer div{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+#footer div #info{
+    text-align: center;
+    color: white;
+}
+#footer div #info a{
+    color: white;
+    text-decoration: none;
+}
+#footer div p{
+    text-align: center;
+}
+#footer #social{
+    margin-left: 47%; 
+}
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+.slide-box{
+    margin: 0 auto;
+	margin-top: 5%;
+	position: relative;
+    width: 80%;
+	height: 10%;
+	padding-bottom: 30%;
+	user-select: none;
+	background-color: black;
+	box-shadow: 0 11px 22px black, 0 7px 7px black;
+}
+.slide-box>input{
+    display: none;
+}
+.slide-img{
+    position: absolute;
+	width: 100%;
+	height: 100%;
+    z-index: -1;
+}
+.slide-img>img{
+    width: inherit;
+    height: inherit;
+}
+#nav_slide{
+    width: 100%;
+    bottom: 12%;
+    height: 11px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    cursor: default;
+}
+.dots{
+    position: relative;
+    display: none;
+    top: 350px;
+    left: 350px;
+    width: 18px;
+    height: 18px;
+    margin: 0 3px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .4s;
+    cursor: pointer;
+}
+#dot1:hover, #dot2:hover, #dot3:hover, #dot4:hover{
+    background: rgb(254,84,0);
+}
+#slidei1:checked ~ #slide-img1, #slidei2:checked ~ #slide-img2, #slidei3:checked ~ #slide-img3, #slidei4:checked ~ #slide-img4{
+	z-index: 9;
+	animation: scroll 1s alternate;
+}
+#slidei1:checked ~ #slide-nav #dot1, #slidei2:checked ~ #slide-nav #dot2, #slidei3:checked ~ #slide-nav #dot3, #slidei4:checked ~ #slide-nav #dot4{
+    background: rgb(254,84,0);
+}
+@keyframes scroll{
+	100% { opacity: 1;}
+}   
+.uper-text{
+    position: absolute;
+    display: block;
+    padding: 2% 5% 1% 5%;
+    width: 35%;
+    height: 20%;
+    color: white;
+    font-size: 180%;
+    text-align: center;
+    background: rgb(254,84,0);
+    z-index: 99;
+    bottom:25%;
+    left:0%;
+}
+#button-sv{
+    width: 100%;
+    margin-top: 3%;
+}
+#button-sv a{
+    cursor: auto;
+    margin-left: 40%;
+}
+#button-sv a #buttonsv{
+    background: rgb(254,84,0);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 110%;
+    border: 1px solid black;
+}
+#button-sv a #buttonsv:hover{
+    color: rgb(242, 160, 100);
+    background: rgba(0, 0, 0, .8);
+    transition: all .5s; 
+}
+#services-box{
+    width: 100%;
+    height: 43%;
+    margin-top: 3%;
+}
+#services-box #n1{
+    float: left;
+    margin-left: 7%;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: white;
+    width: 25%;
+    height: 98%;
+}
+#services-box #n1 img{
+    width: 90%;
+    margin: 5%;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+#services-box #n1 #title{
+    width: 90%;
+    margin-top: 0%;
+    margin-left: 5%;
+    padding: 2%;
+    color: black;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#services-box #n1 #desc{
+    width: 90%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+#services-box #n1 #price{
+    width: 30%;
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#services-box #n1 input{
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 5%;
+    background: rgb(254,84,0);
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 100%;
+    border: 1px solid black;
+}
+#services-box #n1 input:hover{
+    color: rgb(242, 160, 100);
+    background: rgba(0, 0, 0, .8);
+    transition: all .5s; 
+}
+#services-box #n2{
+    float: left;
+    margin-left: 5%;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: white;
+    width: 25%;
+    height: 98%;
+}
+#services-box #n2 img{
+    width: 90%;
+    margin: 5%;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+#services-box #n2 #title{
+    width: 90%;
+    margin-top: 0%;
+    margin-left: 5%;
+    padding: 2%;
+    color: black;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#services-box #n2 #desc{
+    width: 90%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+#services-box #n2 #price{
+    width: 30%;
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#services-box #n2 input{
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 5%;
+    background: rgb(254,84,0);
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 100%;
+    border: 1px solid black;
+}
+#services-box #n2 input:hover{
+    color: rgb(242, 160, 100);
+    background: rgba(0, 0, 0, .8);
+    transition: all .5s; 
+}
+#services-box #n3{
+    float: left;
+    margin-left: 5%;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: white;
+    width: 25%;
+    height: 98%;
+}
+#services-box #n3 img{
+    width: 90%;
+    margin: 5%;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+#services-box #n3 #title{
+    width: 90%;
+    margin-top: 0%;
+    margin-left: 5%;
+    padding: 2%;
+    color: black;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#services-box #n3 #desc{
+    width: 90%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+#services-box #n3 #price{
+    width: 30%;
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#services-box #n3 input{
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 5%;
+    background: rgb(254,84,0);
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 100%;
+    border: 1px solid black;
+}
+#services-box #n3 input:hover{
+    color: rgb(242, 160, 100);
+    background: rgba(0, 0, 0, .8);
+    transition: all .5s; 
+}

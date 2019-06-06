@@ -1,0 +1,28 @@
+/-------------------------------------------SERVICIOS Y BOTON DE CONSULTA
+<div id="button-sv">
+                    <a href="ourservices.html"><input type="button" id="buttonsv" value="CONSULTAR TARIFAS"></a>
+                </div>
+                <div id="services-box">
+                    <div id="n1">
+                        <img src="images/services.jpeg" alt="services">
+                        <p id="title">Traslado Basico Urbano</p>
+                        <p id="desc"><br><br><br><br><br>Desde:</p>
+                        <p id="price">$35</p>
+                        <input type="button" value="CONTRATAR">
+                    </div>
+                    <div id="n2">
+                        <img src="images/services.jpeg" alt="services">
+                        <p id="title">Traslado Basico Socorro/San Gil<br>San Gil/Socorro</p>
+                        <p id="desc"><br><br><br><br>Desde:</p>
+                        <p id="price">$90</p>
+                        <input type="button" value="CONTRATAR">
+                    </div>
+                    <div id="n3">
+                        <img src="images/services.jpeg" alt="services">
+                        <p id="title">Traslado Intermunicipal</p>
+                        <p id="desc"><br><br><br><br><br>Desde:</p>
+                        <p id="price">$90</p>
+                        <input type="button" value="CONTRATAR">
+                    </div>
+                </div>
+/------------------------------------------------
