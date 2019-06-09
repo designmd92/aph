@@ -1,70 +1,66 @@
-html{
-    width: 1340px;
-    max-width: 1340px;
-    height: 630px;
-    max-height: 630px;
-    margin-left: auto;
-    margin-right: auto;
-}
-body{
-    background-color: rgb(254, 108, 36);
-    background-image: url('images/back_page.png');
-    width: 100%;
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-#space{
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(242,100,42);
+    background-image: url('img/back_page.png');
+}
+
+header {
     width: 100%;
-    height: 5%;
+    height: 50px;
 }
-#global{
+
+.content {
     width: 100%;
-    height: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
-#global div{
-    display: inline-block;
-    margin-left: 0%;
-    width: 49%;
-    height: 100%;
+
+#boxes {
+    width: 100%;
+    text-align: center;
 }
-#aph{
-    position: absolute;
-    margin-left: 9%;
-    margin-top: 5%;
+
+#boxes .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    margin: 50px;
+    width: 450px;
+    height: 450px;
+}
+
+.box img {
+    width: 350px;
+    height: 400px;
     -webkit-filter: drop-shadow(5px 5px 5px black);
     filter: drop-shadow(5px 5px 5px black);
+    cursor: pointer;
+
 }
-#aph:hover{
+
+.box img:hover {
     transform: scale(1.1);
-    -webkit-filter: drop-shadow(10px 10px 10px black);
-    filter: drop-shadow(10px 10px 10px black);
-    transition: all .3s;
+    -webkit-filter: drop-shadow(8px 8px 8px black);
+    filter: drop-shadow(8px 8px 8px black);
+    transition: all .5s;
 }
-#celaph{
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 5%;
-    -webkit-filter: drop-shadow(5px 5px 5px black);
-    filter: drop-shadow(5px 5px 5px black);
-}
-#celaph:hover{
-    transform: scale(1.1);
-    -webkit-filter: drop-shadow(10px 10px 10px black);
-    filter: drop-shadow(10px 10px 10px black);
-    transition: all .3s;
-}
-#footer{
-    position: relative;
+
+footer {
     width: 100%;
-    height: 10%;
+    height: 30px;
+    font-size: 12px;
 }
-#footer span{
-    position: relative;
-    width: 100%;
-    margin-left: 38%;
-    top: 50%;
-    font-size: 90%;
+
+footer .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
