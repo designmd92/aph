@@ -98,7 +98,7 @@ body{
 }
 #main{
     width: 90%;
-    height: 60%;
+    height: 65%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -152,6 +152,12 @@ body{
 #content div h4{
     font-size: 12px;
     text-align: center;
+}
+#content div a{
+    width: 98%;
+    font-size: 12px;
+    margin-left: 38%;
+    color: black;
 }
 #n1{
     border: 3px double black;
