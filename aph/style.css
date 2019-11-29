@@ -98,7 +98,8 @@ body{
 }
 #main{
     width: 90%;
-    height: 55.5%;
+    height: 85.5%;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -108,7 +109,7 @@ body{
     height: 11%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
+    margin-top: 15%;
 }
 #footer div{
     margin-left: auto;
@@ -131,3 +132,61 @@ body{
 }
 /*----------------------------------CSS ADICIONAL ---------------------------------------------------- */
 
+#main #content{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    display: inline-block;
+}
+#content #services{
+    width: 98%;
+    height: 15%;
+    border: 3px double black;
+}
+#content #acc_tran{
+    width: 48%;
+    height: 40%;
+    border: 3px double black;
+}
+#content #acc_preh{
+    width: 48%;
+    height: 40%;
+    border: 3px double black;
+}
+#content #acc_evaf{
+    width: 48%;
+    height: 55%;
+    border: 3px double black;
+}
+#content #acc_csde{
+    width: 48%;
+    height: 25%;
+    border: 3px double black;
+}
+#content #acc_trans{
+    width: 48%;
+    height: 15%;
+    border: 3px double black;
+}
+#content div{
+    width: 48%;
+    height: 25%;
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+}
+
+#content div h3{
+    font-size: 20px;
+    text-align: center;
+}
+#content div p{
+    width: 96%;
+    margin-left: 2%;
+    text-align: justify;
+}
+#content div li{
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+}
