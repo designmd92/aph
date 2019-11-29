@@ -108,7 +108,7 @@ body{
     height: 13%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
+    margin-top: 30%;
 }
 #footer div{
     margin-left: auto;
@@ -405,4 +405,24 @@ body{
     color: rgb(242, 160, 100);
     background: rgba(0, 0, 0, .8);
     transition: all .5s; 
+}
+
+/*------------------------------------------ CSS Publicaciones -----------------------------*/
+main #public{
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+}
+#public div{
+    width: 48%;
+    margin-top: 5%;
+    float: left;
+}
+#public div img{
+    width: 40%;
+    margin-left: 35%;
+}
+#public div img:hover{
+    transform: scale(1.5);
+    transition: all .5s;
 }
