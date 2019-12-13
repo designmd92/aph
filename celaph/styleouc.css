@@ -110,7 +110,7 @@ body{
     height: 11%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 320%;
+    margin-top: 370%;
 }
 #footer div{
     margin-left: auto;
@@ -196,5 +196,45 @@ body{
 }
 #content div a:hover{
     background-color: black;
+    transition: all .5s;
+}
+#content h2{
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+#content h2:hover{
+    cursor: pointer;
+    color: rgb(242,81,36);
+    transition: all .5s;
+}
+
+#float-bar {
+    position: fixed;
+    display: flex;
+    right: 1%;
+    top: 15%;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+#float-bar a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#float-bar p{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+#float-bar a:hover p{
+    font-size: 22px;
     transition: all .5s;
 }

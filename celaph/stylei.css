@@ -227,6 +227,35 @@ body{
     background: rgba(0, 0, 0, .8);
     transition: all .5s; 
 }
+
+#float-bar {
+    position: fixed;
+    display: flex;
+    right: 1%;
+    top: 15%;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+#float-bar a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#float-bar p{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+#float-bar a:hover p{
+    font-size: 22px;
+    transition: all .5s;
+}
 /*
 #services-box{
     width: 100%;

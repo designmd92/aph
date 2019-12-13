@@ -147,8 +147,6 @@ body{
 #main #back-us #separator-us{
     border-bottom: 5px double black;
 }
-#main #back-us #separator2-us{ 
-}
 #main #back-us .text-us .title-us{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -172,4 +170,32 @@ body{
     margin-top: 2%;
     margin-left: 5%;
     border-radius: 3px;
+}
+#float-bar {
+    position: fixed;
+    display: flex;
+    right: 1%;
+    top: 15%;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+#float-bar a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#float-bar p{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+#float-bar a:hover p{
+    font-size: 22px;
+    transition: all .5s;
 }
